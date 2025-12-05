@@ -43,13 +43,27 @@ We **recommend** this list for those who haven't tried vibe coding yet. The key 
 
 ## 🚀 Quick Start (The Speed Run)
 
+**⚠️ Important:** Before using the deploy button, you need to:
+1. Create your own GitHub repository from the starter kit
+2. Replace `YOUR_GITHUB_REPO_URL` in the button below with your actual repository URL (URL-encoded)
+
+📖 **See [DEPLOY_SETUP.md](./DEPLOY_SETUP.md) for detailed instructions and URL encoding help.**
+
+**Deploy Button (replace with your repo URL):**
+```markdown
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=YOUR_GITHUB_REPO_URL&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY)
+```
+
+**Example:** If your repo is `https://github.com/username/techsapiens-vibe-starter`, use:
+```
+https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fusername%2Ftechsapiens-vibe-starter&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY
+```
 
 **Step 1: The Instant Backend**
-Click the **"Deploy with Vercel"** button above. It will:
-1.  Clone this repo to your GitHub.
-2.  Spin up a free Supabase project for you.
-3.  Deploy the live site.
+Once you've updated the deploy button with your repo URL, clicking it will:
+1.  Clone your repo to Vercel
+2.  Prompt you to create a free Supabase project
+3.  Deploy the live site
 
 **Step 2: The "Vibe Check"**
 Clone your new repo locally.
@@ -61,11 +75,21 @@ npm install
 npm run dev
 ````
 
-Step 3: The Data Injection
+**Step 3: The Data Injection**
 
-We have pre-loaded src/data/participants.json with a dataset of attendees (anonymized/sanitized).
+The starter kit includes `participants_mocked.json` with anonymized participant data. Copy it to your project:
+
+```bash
+# Copy the mocked data to your project
+cp participants_mocked.json src/data/participants.json
+```
 
 - **Your First Task:** Ask your AI agent (Cursor/Windsurf/Replit) to: _"Write a script to seed the Supabase 'users' table with the data from participants.json."_
+
+**📋 Data Files:**
+- `participants_mocked.json` - Public template (safe for GitHub)
+- `participants.json` - Real data (use during event with consent)
+- See `DATA_WORKFLOW.md` for complete data workflow guide
     
 
 ---

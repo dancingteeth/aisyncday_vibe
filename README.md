@@ -49,10 +49,6 @@ We **recommend** this list for those who haven't tried vibe coding yet. The key 
 
 📖 **See [DEPLOY_SETUP.md](./DEPLOY_SETUP.md) for detailed instructions and URL encoding help.**
 
-**Deploy Button (replace with your repo URL):**
-```markdown
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=YOUR_GITHUB_REPO_URL&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY)
-```
 
 **Example:** If your repo is `https://github.com/username/techsapiens-vibe-starter`, use:
 ```
